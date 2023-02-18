@@ -1,16 +1,16 @@
 import {
-  GET_ALL_PRODUCTS,
-  GET_SELECTED_PRODUCT,
+  GET_ALL_COURSES,
+  GET_SELECTED_COURSE,
   FETCH_ERROR,
 } from "../constants";
-import axios from "../util/Api";
+import axios from "../utils/Api";
 
-export const getProducts = () => {
+export const getCourses = (search = "") => {
   return (dispatch) => {
     return axios
-      .get("products")
+      .get("courses", { params: { q: search } })
       .then(({ data }) => {
-        if (data) dispatch({ type: GET_ALL_PRODUCTS, payload: data });
+        if (data) dispatch({ type: GET_ALL_COURSES, payload: data.data });
         else dispatch({ type: FETCH_ERROR, payload: data.error });
       })
       .catch((error) => {
@@ -19,12 +19,12 @@ export const getProducts = () => {
   };
 };
 
-export const getSelectedPost = (productId) => {
+export const getSelectedCourse = (courseId) => {
   return (dispatch) => {
     return axios
-      .get(`products/${productId}`)
+      .get(`courses/${courseId}`)
       .then(({ data }) => {
-        if (data) dispatch({ type: GET_SELECTED_PRODUCT, payload: data });
+        if (data) dispatch({ type: GET_SELECTED_COURSE, payload: data.data });
         else dispatch({ type: FETCH_ERROR, payload: data.error });
       })
       .catch((error) => {

@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 
-import ProductsReducer from "./Products";
+import CourseReducer from "./Course";
 import ExerciseReducer from "./Exercise";
 
 const reducer = combineReducers({
-  ProductsReducer,
+  CourseReducer,
   ExerciseReducer
 });
 

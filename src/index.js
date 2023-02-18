@@ -10,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.css";
 //pages
 import HomePage from "./pages/Home";
 import ExercisePage from "./pages/Exercise";
+import CoursePage from "./pages/Course/index";
+import CourseDetailPage from "./pages/Course/CourseDetail";
 
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
@@ -19,6 +21,8 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/courses" element={<CoursePage />} />
+        <Route path="/courses/:id" element={<CourseDetailPage />} />
         <Route path="/exercise" element={<ExercisePage />} />
       </Routes>
     </Router>

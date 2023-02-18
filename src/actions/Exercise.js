@@ -1,17 +1,29 @@
-import { GET_EXERCISE_RESULT, FETCH_ERROR } from "../constants";
-import axios from "../util/Api";
+import { GET_EXERCISE_RESULT } from "../constants";
+import axios from "../utils/Api";
 
 export const storeExercise = (exercise) => {
   return async (dispatch) => {
     return axios
       .post("exercise", exercise)
       .then(({ data }) => {
-        if (data) {
-          dispatch({ type: GET_EXERCISE_RESULT, payload: data });
-        } else dispatch({ type: FETCH_ERROR, payload: data.error });
+        if (data.success) {
+          dispatch({ 
+            type: GET_EXERCISE_RESULT,
+            payload: {
+              status: "success",
+              output: data.data
+            }
+          });
+        }
       })
       .catch((error) => {
-        throw error;
+        dispatch({ 
+          type: GET_EXERCISE_RESULT,
+          payload: {
+            status: "error",
+            output: error.response.data.errors
+          }
+        });
       });
   };
 };
