@@ -20,7 +20,7 @@ const Content = (props) => {
               <h2 className="mb-3">Our Courses</h2>
             </div>
           </Row>
-          <CourseList courses={props.courses_data} />
+          <CourseList courses={props.courses_data.slice(0, 3)} />
         </div>
       </Row>
     </Container>

@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# Online Course Frontend with React
+
+Online course is a web-based platform that provides a Proof of Concept (POC) for courses and also features a simple integrated development environment (IDE). The platform is designed to cater to individuals who are seeking to learn new skills, improve their expertise, or enhance their knowledge. The platform provides an opportunity to learn from experienced instructors through online courses and engage with other learners in the community.
+
+## Home Page
+Home page will appears like image bellow and contains banner and 3 course lists.
+![home page](https://github.com/salimarizi/online-course-frontend/blob/main/public/homepage.png?raw=true)
+
+## Course Page
+Course page will appears like image bellow and contains course lists within search input.
+![course page](https://github.com/salimarizi/online-course-frontend/blob/main/public/coursepage.png?raw=true)
+
+## Course Detail Page
+Course detail page will appears like image bellow and contains details of the selected course.
+![course detail page](https://github.com/salimarizi/online-course-frontend/blob/main/public/coursedetailpage.png?raw=true)
+
+## Exercise Page
+Exercise page will appears like image bellow and contains simple IDE that can compile 2 programming language (Python and Javascript).
+![exercise page](https://github.com/salimarizi/online-course-frontend/blob/main/public/exercisepage.png?raw=true)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -38,33 +57,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
